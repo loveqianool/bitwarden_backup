@@ -5,5 +5,5 @@ docker run --rm --volumes-from=bitwarden --user 1111:users \
 -e TZ="$(cat /etc/timezone)" \
 -e DATA_FOLDER=/data \
 -e REMOTE=gd \
-bitwarden_backup
+loveqianool/bitwarden_backup
 ```
