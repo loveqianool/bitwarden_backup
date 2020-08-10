@@ -7,4 +7,5 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN apk add --no-cache zip tzdata sqlite && \
 chmod +x /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT [ "sh", "-c", "entrypoint.sh" ]
+#ENTRYPOINT [ "sh", "-c", "entrypoint.sh" ]
+CMD [ "sh", "-c", "entrypoint.sh" ]
