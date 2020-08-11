@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:edge
 ENV TZ UTC
 ENV DATA_FOLDER /data
 ENV REMOTE gd
