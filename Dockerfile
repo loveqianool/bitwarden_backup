@@ -11,8 +11,8 @@ RUN apk add --no-cache zip tzdata sqlite ca-certificates fuse && \
 echo "user_allow_other" >> /etc/fuse.conf && \
 wget https://beta.rclone.org/rclone-beta-latest-linux-amd64.zip && \
 unzip rclone-beta-latest-linux-amd64.zip && \
-mv rclone-beta-latest-linux-amd64/rclone /usr/local/bin && \
-rm -rf rclone-beta-latest-linux-* && \
+mv rclone-*/rclone /usr/local/bin && \
+rm -rf rclone-* && \
 chmod +x /usr/local/bin/rclone && \
 chmod +x /usr/local/bin/entrypoint.sh
 
